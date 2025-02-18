@@ -25,10 +25,10 @@
     <input type="number" id="height" value="933.410">
     <button onclick="calculate()">Calculate</button>
 
-    <h2>Results:</h2>
-	<p>-------------------------------------------</p>
-	<p>   Palestine1923  Coordinates  (Modified TM)</p>
-	<p>-------------------------------------------</p>
+    
+	<p>-----------------------------------------------</p>
+	<p>  Palestine1923 Grid Coordinates (Modified TM)</p>
+	<p>-----------------------------------------------</p>
     <p>Palestine1923 Latitude (φ): <span class="result" id="latitude"></span></p>
     <p>Palestine1923 Longitude (λ): <span class="result" id="longitude"></span></p>
     <p>Palestine1923 Height (h): <span class="result" id="heightResult"></span></p>
@@ -36,9 +36,9 @@
     <p>Palestine1923 X: <span class="result" id="x"></span></p>
     <p>Palestine1923 Y: <span class="result" id="y"></span></p>
     <p>Palestine1923 Z: <span class="result" id="z"></span></p>
-	<p>-------------------------------------------</p>
-	<p>    PAL-GRF2023 Grid   </p>
-	<p>-------------------------------------------</p>
+	<p>-----------------------------------------------</p>
+	<p>            PAL-GRF2023 Grid   </p>
+	<p>-----------------------------------------------</p>
 	<p>PAL-GRF2023 Geocentric X: <span class="result" id="xt"></span></p>
     <p>PAL-GRF2023 Geocentric Y: <span class="result" id="yt"></span></p>
     <p>PAL-GRF2023 Geocentric Z: <span class="result" id="zt"></span></p>
@@ -240,13 +240,13 @@
             document.getElementById('x').innerText = X.toFixed(4);
             document.getElementById('y').innerText = Y.toFixed(4);
             document.getElementById('z').innerText = Z.toFixed(4);
-			document.getElementById('xt').innerText = Xt.toFixed(4);
+	    document.getElementById('xt').innerText = Xt.toFixed(4);
             document.getElementById('yt').innerText = Yt.toFixed(4);
             document.getElementById('zt').innerText = Zt.toFixed(4);
-			document.getElementById('newlat').innerText = newLat.toFixed(8);
+	    document.getElementById('newlat').innerText = newLat.toFixed(8);
             document.getElementById('newlon').innerText = newLon.toFixed(8);
             document.getElementById('newh').innerText = newHeight.toFixed(4);
-			document.getElementById('E').innerText = easting1.toFixed(4);
+	    document.getElementById('E').innerText = easting1.toFixed(4);
             document.getElementById('N').innerText = northing1.toFixed(4);
         }
 		
