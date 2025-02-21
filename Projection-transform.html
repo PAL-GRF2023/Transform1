@@ -239,11 +239,29 @@
     </script>
 </head>
 <body>
-    <h1>PAL-GRF2023 - Palestine1923</h1>
-    <h2>Direct Transformation</h2>
-	<p>-------------------------------------------</p>
- <a href="https://pal-grf2023.github.io/Transform1/"> EN Grid Transformations</a>
-	<p>-------------------------------------------</p>
+
+	<a href="index.html" class="button">Grid Coord</a>
+    <a href="Projection-transform.html" class="button">Geographic Coord</a>
+    <style>
+        /* Optional CSS styling for better appearance */
+        button, .button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        button:hover, .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+	
+    
     <form>
         <label for="latDMS">Lat_(DMS) __________  Lon_(DMS) </label><br>
         <input type="text" id="latDMS" value="31,30,17.50284">
