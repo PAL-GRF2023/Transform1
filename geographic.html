@@ -204,31 +204,19 @@
 
             document.getElementById('result').innerHTML = `
 				<p>-------------------------------------------</p>
-				<p>    PAL-GRF2023 Grid   </p>
-				<p>-------------------------------------------</p>
-                		<p>PAL-GRF Geocentric X: ${X.toFixed(4)}</p>
-				<p>PAL-GRF Geocentric Y: ${Y.toFixed(4)}</p>
-				<p>PAL-GRF Geocentric Z: ${Z.toFixed(4)}</p>
-				<p>-------------------------------------------</p>
-				<p>PAL-GRF Latitude : ${lat.toFixed(8)}</p>
-                <p>PAL-GRF Longitude: ${lon.toFixed(9)}</p>
-                <p>PAL-GRF Height: ${height.toFixed(4)}</p>
-				<p>-------------------------------------------</p>
-				<p>PAL-GRF Easting: ${easting.toFixed(4)}</p>
-                		<p>PAL-GRF Northing: ${northing.toFixed(4)}</p>
+                <p>PAL-GRF Geocentric X,Y,Z: </p>
+				<p style="color: blue;">${X.toFixed(4)} , ${Y.toFixed(4)} , ${Z.toFixed(4)}</p>
+				<p>PAL-GRF Grid (E, N): </p>
+                <p style="color: blue;">${easting.toFixed(4)} , ${northing.toFixed(4)} </p>
 				<p>-------------------------------------------</p>
 				<p>    Palestine1923  Coordinates  (Modified TM)</p>
 				<p>-------------------------------------------</p>
-				<p>Pal1923 Geocentric X (GRS80): ${Xt.toFixed(4)}</p>
-                		<p>Pal1923 Geocentric Y (GRS80): ${Yt.toFixed(4)}</p>
-                		<p>Pal1923 Geocentric Z (GRS80): ${Zt.toFixed(4)}</p>
-				<p>-------------------------------------------</p>
-				<p>Pal1923 Latitude (TM): ${newLat.toFixed(9)}</p>
-                		<p>Pal1923 Longitude (TM): ${newLon.toFixed(9)}</p>
-                		<p>Pal1923 Height: ${newHeight.toFixed(4)}</p>
-				<p>-------------------------------------------</p>
-                		<p>Pal1923 Easting  (TM): ${easting1.toFixed(4)}</p>
-                		<p>Pal1923 Northing (TM): ${northing1.toFixed(4)}</p>
+				<p>Pal1923 Geocentric X (GRS80): </p>
+                <p style="color: blue;">${Xt.toFixed(4)} , ${Yt.toFixed(4)} , ${Zt.toFixed(4)}</p>
+				<p>Pal1923 Geographic (Modified TM): </p>
+                <p style="color: blue;">${newLat.toFixed(9)} , ${newLon.toFixed(9)} , ${newHeight.toFixed(4)}</p>
+                <p>Pal1923 Grid (E , N)  (TM): </p>
+                <p style="color: blue;">${easting1.toFixed(4)} , ${northing1.toFixed(4)}</p>
 				<p>-------------------------------------------</p>
     <p> </p>
     <p> Programmed by:  Dr. Ghadi Zakarneh </p>
@@ -241,7 +229,7 @@
 <body>
 
 	<a href="index.html" class="button">Grid Coord</a>
-    <a href="Projection-transform.html" class="button">Geographic Coord</a>
+    <a href="geographic.html" class="button">Geographic Coord</a>
     <style>
         /* Optional CSS styling for better appearance */
         button, .button {
