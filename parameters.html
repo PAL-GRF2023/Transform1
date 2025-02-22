@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAL-GRF2023 Parameters</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <p><strong>Coordinate System:</strong> PAL-GRF2023_Grid</p>
+    <p><strong>Datum:</strong> Pal-GRF2023</p>
+
+    <h2>Defining Parameters:</h2>
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Value</th>
+            
+        </tr>
+        
+        <tr>
+            <td>ITRF ref.</td>
+            <td>ITRF20</td>      
+        </tr>
+        <tr>
+            <td>Reference Time</td>
+            <td>2023.50</td>
+        </tr>
+        <tr>
+            <td>Ellipsoid</td>
+            <td>GRS80</td>
+            
+        </tr>
+        <tr>
+            <td>Semi-major axis (a)</td>
+            <td>6378137.00</td>
+            
+        </tr>
+        <tr>
+            <td>Inverse flattening (1/f)</td>
+            <td>398.257222100882</td>
+            
+        </tr>
+        <tr>
+            <td>Semi-minor axis (b)</td>
+            <td>6356752.31414</td>
+            
+        </tr>
+        <tr>
+            <td>Projection Method</td>
+            <td>Transverse Mercator (TM)</td>
+            
+        </tr>
+        <tr>
+            <td>Scale</td>
+            <td>1.000003</td>
+            
+        </tr>
+        <tr>
+            <td>False Easting</td>
+            <td>220000.00</td>
+            
+        </tr>
+        <tr>
+            <td>False Northing</td>
+            <td>500000.00</td>
+            
+        </tr>
+        <tr>
+            <td>Central Meridian</td>
+            <td>35.23500 <br>35° 14’ 06.000”</td>
+            
+        </tr>
+        <tr>
+            <td>Latitude of Origin</td>
+            <td>31.777777 777<br>31° 46’ 40.000”</td>
+        </tr>
+    </table>
+
+    <h2>Datum Transformation Parameters</h2>
+    <h3>1. Traverse, GNSS base, or network based on PAL-GRF2023 datum</h3>
+    <p>The following parameters are used (Pal-GRF2023=WGS84):</p>
+<table>
+        <tr>
+            <th>Scale</th>
+            <th>Rx</th>
+            <th>Ry</th>
+            <th>Rz</th>
+            <th>Tx</th>
+            <th>Ty</th>
+            <th>Tz</th>
+        </tr>
+        <tr>
+            <td>1.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+        </tr>
+    </table>
+    <h3>2. Current GNSS/GPS users & GNSS surveyed Cadastral Maps (Taswia since 2018)</h3>
+    <p>For the GNSS/GPS Instruments & data collectors using the current CORS-Network, the transformation parameter from CORS-Networks coordinates (ITRF2000-2004.75) to PAL-GRF2023 Datum are:</p>
+    <table>
+        <tr>
+            <th>Scale</th>
+            <th>Rx</th>
+            <th>Ry</th>
+            <th>Rz</th>
+            <th>Tx</th>
+            <th>Ty</th>
+            <th>Tz</th>
+        </tr>
+        <tr>
+            <td>1.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>-0.3889</td>
+            <td>0.2489</td>
+            <td>0.3589</td>
+        </tr>
+    </table>
+    
+
+    <h3>3. GIS maps & Small-Scale maps</h3>
+    <p>The transformation parameters (frame-system) to be used in GIS software to convert from Pal1923_Grid to Pal-GRF2023 are:</p>
+   
+    <p>Where,</p>
+    <table>
+        <tr>
+            <th>Dm</th>
+            <th>Rx</th>
+            <th>Ry</th>
+            <th>Rz</th>
+            <th>Tx</th>
+            <th>Ty</th>
+            <th>Tz</th>
+        </tr>
+        <tr>
+            <td>-15.22329 ppm</td>
+            <td>10.07015”</td>
+            <td>8.45655”</td>
+            <td>5.37202”</td>
+            <td>-114.5200</td>
+            <td>-79.3790</td>
+            <td>281.6324</td>
+        </tr>
+    </table>
+
+</body>
+</html>
