@@ -839,14 +839,13 @@ p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
 a:link, span.MsoHyperlink
 	{mso-style-noshow:yes;
 	mso-style-priority:99;
-	color:blue;
 	text-decoration:none;
-	text-underline:single;}
+	}
 a:visited, span.MsoHyperlinkFollowed
 	{mso-style-noshow:yes;
 	mso-style-priority:99;
 	text-decoration:none;
-	text-underline:single;}
+	}
 p
 	{mso-style-noshow:yes;
 	mso-style-priority:99;
@@ -1399,8 +1398,8 @@ table.MsoTable15Grid5DarkAccent5OddRow
 	<style>
         /* Optional CSS styling for better appearance */
         button, .button {
-            padding: 8px 15px;
-            margin: 7px;
+            padding: 3px 3px;
+            margin: 2px;
             background-color: #4CAF50;
             color: white;
             border: none;
@@ -1427,7 +1426,16 @@ table.MsoTable15Grid5DarkAccent5OddRow
    type="frame"/>
  </v:background></xml><![endif]-->
 
+<button onclick="translatePage()">Translate to English</button>
 
+    <script>
+        function translatePage() {
+            // Change the language of the page to English
+            window.location.href = "https://translate.google.com/translate?hl=en&sl=ar&tl=en&u=" + encodeURIComponent(window.location.href);
+        }
+    </script>
+
+	
 <div class=WordSection1>
 
 
